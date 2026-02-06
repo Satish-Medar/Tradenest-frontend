@@ -23,6 +23,7 @@ root.render(
     <ScrollToTop />
     <Navbar />
     <Routes>
+      <Route path="/index.html" element={<HomePage />} />
       <Route path="/" element={<HomePage />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
