@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 function Hero() {
   return (
-    <div className="container p-5 mb-5 mt-5">
+    <div className="container p-4 p-lg-5 mb-5 mt-4 mt-lg-5">
       <div className="row text-center">
         <img
           src="images/homeHero.png"
@@ -16,7 +16,7 @@ function Hero() {
         </p>
         <div className="rounded btn-div d-flex justify-content-center mt-4">
           <button
-            className="rounded-3 btn btn-primary fw-medium fixed-btn"
+            className="rounded-3 btn btn-primary fw-medium fixed-btn home-cta"
             type="button"
           >
             Sign up for free

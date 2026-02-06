@@ -11,9 +11,9 @@ function RightSection({
   appStore,
 }) {
   return (
-    <div className="container mt-5 ">
-      <div className="row">
-        <div className="col-md-4 align-self-center">
+    <div className="container mt-4 mt-lg-5">
+      <div className="row align-items-center g-4">
+        <div className="col-12 col-lg-5">
           <h2 className=" mb-4 fs-3">{productName}</h2>
           <p
             className="text-muted"
@@ -22,7 +22,7 @@ function RightSection({
             {productDescription}
           </p>
 
-          <div className="founder-links d-flex gap-4 mt-4">
+          <div className="founder-links d-flex flex-wrap gap-3 mt-3">
             <Link to={tryDemo}>
               Learn more <i className="fa-solid fa-arrow-right mb-3"></i>
             </Link>
@@ -32,8 +32,7 @@ function RightSection({
 
       
         </div>
-        <div className="col-1"></div>
-        <div className="col-md-7">
+        <div className="col-12 col-lg-7">
           <img
             src={imageURL}
             alt={productName}

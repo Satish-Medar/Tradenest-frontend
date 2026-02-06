@@ -5,6 +5,12 @@
   --lp-border: #e6e6e6;
   --lp-link: #387ed1;
   --lp-footer: #fafafa;
+  --fs-h1: clamp(1.6rem, 1.2rem + 2vw, 2.6rem);
+  --fs-h2: clamp(1.35rem, 1.1rem + 1.4vw, 2rem);
+  --fs-h3: clamp(1.2rem, 1rem + 1vw, 1.6rem);
+  --fs-h4: clamp(1.05rem, 0.95rem + 0.6vw, 1.3rem);
+  --fs-body: clamp(0.95rem, 0.9rem + 0.35vw, 1.05rem);
+  --fs-small: clamp(0.8rem, 0.75rem + 0.25vw, 0.95rem);
 }
 
 [data-theme="dark"] {
@@ -25,6 +31,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--lp-bg);
   color: var(--lp-text);
+  font-size: var(--fs-body);
+  padding-top: 64px;
+}
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 72px;
+  }
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+}
+
+p,
+li,
+label,
+input,
+button,
+a {
+  font-size: var(--fs-body);
+}
+
+small {
+  font-size: var(--fs-small);
 }
 
 .text-muted {
@@ -112,6 +155,33 @@ code {
 .footer-lastlinks {
   margin-top: 20px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .site-footer .row {
+    row-gap: 24px;
+  }
+
+  .site-footer img {
+    margin-left: 0;
+  }
+
+  .footer-lastlinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .footer-lastlinks a {
+    margin-left: 0;
+  }
+
+  .link p {
+    font-size: 0.7rem;
+    line-height: 1.6;
+  }
 }
 .footer-copy {
   font-size: 0.86rem;
@@ -240,6 +310,17 @@ code {
   opacity: 0.9;
 }
 
+.home-cta {
+  width: 100%;
+  max-width: 260px;
+}
+
+@media (max-width: 576px) {
+  .home-cta {
+    max-width: 100%;
+  }
+}
+
 #supportHero a {
   color: white;
 }
@@ -360,4 +441,24 @@ code {
   display: grid;
   gap: 10px;
   margin: 12px 0 16px;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.team-photo {
+  width: min(280px, 70vw);
+  height: min(280px, 70vw);
+  margin: 0 auto;
+}
+
+.product-cta {
+  width: 100%;
+}
+
+.pricing-list {
+  font-size: var(--fs-small);
 }

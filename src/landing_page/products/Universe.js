@@ -10,8 +10,8 @@ function Universe() {
           partner platforms
         </p>
       </div>
-      <div className="row">
-        <div className="col-3 text-center mb-4">
+      <div className="row g-4">
+        <div className="col-12 col-md-6 col-lg-4 text-center mb-2">
           <img
             src="/images/zerodhaFundhouse.png"
             alt="Universe 1"
@@ -33,8 +33,7 @@ function Universe() {
             more.
           </p>
         </div>
-        <div className="col-1"></div>
-        <div className="col-3 text-center mb-4">
+        <div className="col-12 col-md-6 col-lg-4 text-center mb-2">
           <img
             src="/images/sensibullLogo.svg"
             alt="Universe 1"
@@ -56,8 +55,7 @@ function Universe() {
             more.
           </p>
         </div>
-        <div className="col-1"></div>
-        <div className="col-3 text-center mb-4">
+        <div className="col-12 col-md-6 col-lg-4 text-center mb-2">
           <img
             src="/images/tijori.svg"
             alt="Universe 1"
@@ -82,9 +80,9 @@ function Universe() {
       </div>
       <div className="row">
         <button
-          className="rounded-3 btn btn-primary fw-medium fixed-btn text-center mb-5"
+          className="rounded-3 btn btn-primary fw-medium fixed-btn text-center mb-5 product-cta"
           type="button"
-          style={{ maxWidth: "200px", margin: "0 auto", height: "50px", fontSize: "16px", textAlign: "center" }}
+          style={{ maxWidth: "220px", margin: "0 auto", height: "50px", textAlign: "center" }}
         >
           Sign up for free
         </button>

@@ -2,7 +2,7 @@ import React from "react";
 
 function Pricing() {
   return (
-    <div className="container px-3 mb-5">
+    <div className="container px-3 mb-5 mt-4 mt-lg-5">
       <div className="row align-items-center">
         <div className="col-12 col-lg-4">
           <h1 className="mt-5 mb-5 fs-2">Unbeatable pricing</h1>

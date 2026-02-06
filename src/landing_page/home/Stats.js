@@ -2,8 +2,8 @@ import React from "react";
 
 function Stats() {
   return (
-    <div className="container px-3 mt-5 mb-5">
-      <div className="row mt-5 align-items-center">
+    <div className="container px-3 mt-4 mt-lg-5 mb-5">
+      <div className="row mt-4 mt-lg-5 align-items-center">
         <div className="col-12 col-lg-6">
           <h1 className="mb-5 fs-2 ">Trust with confidence</h1>
           <h3 className="fs-4">Customer-first always </h3>

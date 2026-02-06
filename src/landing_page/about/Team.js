@@ -5,24 +5,18 @@ function Team() {
   return (
     <div className="container mb-5">
       <div className="row">
-        <h1 className="fs-4 text-center mb-5">
+        <h1 className="fs-4 text-center mb-4 mb-lg-5">
           Meet the Team
         </h1>
       </div>
 
-      <div className="row align-items-center">
-        <div className="col-2"></div>
-
-        <div className="col-4 text-center">
-          <div style={{ width: "300px", height: "300px", margin: "0 auto" }}>
+      <div className="row align-items-center g-4">
+        <div className="col-12 col-lg-5 text-center">
+          <div className="team-photo">
             <img
               src="/images/Satish.jpg"
               alt="Team Photo"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
               className="rounded-circle pt-2"
             />
           </div>
@@ -33,11 +27,11 @@ function Team() {
           <p className="text-muted">Founder, CEO</p>
         </div>
 
-        <div className="col-md-4 col-12 mb-5">
+        <div className="col-12 col-lg-7">
           <p>
-            Nithin bootstrapped and founded Zerodha in 2010 to overcome the
+            Satish bootstrapped and founded Tradenest in 2026 to overcome the
             hurdles he faced during his decade long stint as a trader. Today,
-            Zerodha has changed the landscape of the Indian broking industry.
+            Tradenest has changed the landscape of the Indian broking industry.
           </p>
 
           <p>
@@ -51,8 +45,6 @@ function Team() {
             <Link to="#"> TradingQnA</Link> / <Link to="#"> Twitter</Link>
           </p>
         </div>
-
-        <div className="col-2"></div>
       </div>
     </div>
   );

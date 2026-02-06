@@ -2,7 +2,7 @@ import React from "react";
 
 function Education() {
   return (
-    <div className="container mt-5 px-3">
+    <div className="container mt-4 mt-lg-5 px-3">
       <div className="row align-items-center">
         <div className="col-12 col-lg-6 p-4 p-lg-5 order-2 order-lg-1">
           <img src="/images/education.svg" alt="Education Image" className="img-fluid" />

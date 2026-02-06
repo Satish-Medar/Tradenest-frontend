@@ -11,9 +11,9 @@ function LeftSection({
   appStore,
 }) {
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-md-7">
+    <div className="container mt-4 mt-lg-5">
+      <div className="row align-items-center g-4">
+        <div className="col-12 col-lg-7">
           <img
             src={imageURL}
             alt={productName}
@@ -21,9 +21,8 @@ function LeftSection({
             style={{ maxWidth: "100%" }}
           />
         </div>
-        <div className="col-1"></div>
 
-        <div className="col-md-4 mt-5">
+        <div className="col-12 col-lg-5">
           <h2 className="mb-4 fs-3">{productName}</h2>
           <p
             className="text-muted"
@@ -32,7 +31,7 @@ function LeftSection({
             {productDescription}
           </p>
 
-          <div className="founder-links d-flex gap-4 mt-4">
+          <div className="founder-links d-flex flex-wrap gap-3 mt-3">
             <Link to={tryDemo}>
               Try Demo <i className="fa-solid fa-arrow-right mb-3"></i>
             </Link>
@@ -42,12 +41,12 @@ function LeftSection({
             </Link>
           </div>
 
-          <div className="mt-3">
+          <div className="mt-3 d-flex flex-wrap gap-3">
             <a href={googlePlay} target="_blank" rel="noreferrer">
               <img
                 src="/images/googlePlayBadge.svg"
                 alt="Google Play Store"
-                style={{ height: "40px", marginRight: "10px" }}
+                style={{ height: "40px" }}
               />
             </a>
 
@@ -55,7 +54,7 @@ function LeftSection({
               <img
                 src="/images/appStoreBadge.svg"
                 alt="App Store"
-                style={{ height: "40px", marginLeft: "10px" }}
+                style={{ height: "40px" }}
               />
             </a>
           </div>
