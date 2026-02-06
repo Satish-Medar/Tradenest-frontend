@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../api";
-import { DASHBOARD_URL, LANDING_URL } from "../config";
+import { DASHBOARD_URL, landingPath, dashboardPath, LANDING_URL } from "../config";
 import { toggleTheme } from "../theme";
 
 function Navbar() {
@@ -19,7 +19,7 @@ function Navbar() {
       await api.post("/logout");
     } finally {
       setUser(null);
-      window.location.href = `${LANDING_URL}/login`;
+      window.location.href = landingPath("/login");
     }
   };
 
@@ -74,9 +74,9 @@ function Navbar() {
                   e.preventDefault();
                   try {
                     await api.get("/me");
-                    window.location.href = `${DASHBOARD_URL}/`;
+                    window.location.href = dashboardPath("/");
                   } catch {
-                      window.location.href = `${LANDING_URL}/login`;
+                      window.location.href = landingPath("/login");
                   }
                 }}
               >
