@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../api";
+import { DASHBOARD_URL, LANDING_URL } from "../config";
 import { toggleTheme } from "../theme";
 
 function Navbar() {
@@ -18,7 +19,7 @@ function Navbar() {
       await api.post("/logout");
     } finally {
       setUser(null);
-      window.location.href = "http://localhost:3000/login";
+      window.location.href = `${LANDING_URL}/login`;
     }
   };
 
@@ -73,9 +74,9 @@ function Navbar() {
                   e.preventDefault();
                   try {
                     await api.get("/me");
-                    window.location.href = "http://localhost:3001/";
+                    window.location.href = `${DASHBOARD_URL}/`;
                   } catch {
-                    window.location.href = "http://localhost:3000/login";
+                      window.location.href = `${LANDING_URL}/login`;
                   }
                 }}
               >

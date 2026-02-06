@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../../api";
+import { DASHBOARD_URL } from "../../config";
 import "../auth/Auth.css";
 
 function Login() {
@@ -26,7 +27,7 @@ function Login() {
         username: form.email,
         password: form.password,
       });
-      window.location.href = "http://localhost:3001/";
+      window.location.href = `${DASHBOARD_URL}/`;
     } catch (err) {
       const message =
         err?.response?.data?.error || "Login failed. Try again.";

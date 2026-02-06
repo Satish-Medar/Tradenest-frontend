@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../../api";
+import { LANDING_URL } from "../../config";
 import "../auth/Auth.css";
 
 function Signup() {
